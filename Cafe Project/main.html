@@ -267,7 +267,7 @@
                         <input type="email" name="email" placeholder="Email Address">
                         <input type="text" name="subject"  placeholder="Subject">
                         <textarea name="message"  cols="30" rows="5" placeholder="Message"></textarea>
-                        <button type="submit">SEND SUPPORT</button>
+                        <<a href="#" onclick="toggle()">PLACE ORDER</a>
                     </form>
                 </div>
             </div>
@@ -286,6 +286,22 @@
             <p>copyright &copy;2024. designed by <span>Nisita & Ranjan</span></p>
         </div>
     </footer>
+
+     <div id="popup">
+        <h2>Thank You</h2>
+        <p>Our Cafe will contact you for additional information!!
+            We are waiting for your conformation!!
+        </p>
+        <a href="#" onclick="toggle()" >Close</a>
+    </div>
+    <script>
+        function toggle() {
+            var blur=document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
